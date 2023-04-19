@@ -1,0 +1,9 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<h2>{{tag}}</h2>
+{{ page.content | raw }}
+{% include 'partials/taxonomylist.html.twig' with {route_url: my_url, taxonomy: 'tag'} %}
+{% include 'partials/footer.html.twig' %}
+{% endblock %}
+
+

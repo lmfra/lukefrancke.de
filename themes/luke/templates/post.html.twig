@@ -1,0 +1,22 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<h1 class="blog-title">{{ page.title }}</h1>
+<p class="backlink"><a href="/writing">back to overview</a></p>
+<p class="date strong grey">{{ page.date|date('F d, Y') }}</p>
+<div class="divider"></div>
+{{ content | raw }}
+<div class="bordered">
+<p class="centered"><span class="strong">Tags:</span>
+{% for tag in page.taxonomy.tag %}
+<a class="nounderline" href="/writing/tag:{{tag}}"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line></svg>{{ tag }}</a>
+{% endfor %}
+</p>
+<div class="divider"></div>
+<p class="red-note mobile-hidden centered">Sorry! On some computers, the share function does not work as it should. I will fix the problem soon.</p>
+<h3 class="centered">Share this post:</h3>
+<script>
+function share(){navigator.share&&navigator.share({url:"{{ page.url(true)|e }}"})}
+</script>
+<a href="javascript:void(0)" class="button center-button" onclick="share()"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4b4a4c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>Share</a>
+</div>
+{% endblock %}

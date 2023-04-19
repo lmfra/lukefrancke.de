@@ -1,0 +1,50 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<!-- Last updated: {{ node.published_at.value|date('F d, Y') }} | created with Grav -->
+<head>
+{% block head %}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no">
+<title>{% if header.title %}{{ header.title|e('html') }} – {% endif %}{{ site.title|e('html') }}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% include 'partials/metadata.html.twig' %}
+<link rel="manifest" href="/user/themes/luke/includes/site.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="https://lukefrancke.de/user/themes/luke/images/touchicon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="https://lukefrancke.de/user/themes/luke/images/touchicon.png">
+<link rel="icon" href="/user/themes/luke/images/favicon-pre.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="/user/themes/luke/images/favicon-pre.ico">
+<link href="/user/themes/luke/css/main.css?ver=4.6" rel="stylesheet">
+<script defer src="/user/themes/luke/js/main.js?ver=1.2"></script>
+<!-- If you're reading this: We need more privacy - now! -->
+<link rel="canonical" href="{{ page.url(true)|e }}">
+{% endblock head%}
+</head>
+<body>
+<div id="site-header" class="header">
+<span class="loader" id="preloader"></span>
+<h1 class="header-logo"><a href="/">Luke Francke</a></h1>
+<div onclick="navmenu()" class="menu-cta"><div class="navmenu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="14" y2="18"></line></svg></div></div>  
+</div>
+<div id="navmenu" class="navmenu-content">
+<div class="close-section">
+<p class="nav-logo">Navigation</p>
+<div onclick="navmenu()" class="menu-cta"><div class="navmenu-btn"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div></div>
+</div>
+<div class="navmenu-links">
+<a href="/"><span {% if page.home %}class="active" {% endif %}>Home</span></a>
+<a href="/about"><span {% if uri.path== '/about' %}class="active" {% endif %}>About</span></a>
+<a href="/now"><span {% if uri.path== '/now' %}class="active" {% endif %}>Now</span></a>
+<a href="/showcase"><span {% if uri.path== '/showcase' %}class="active" {% endif %}>Showcase</span></a>
+<a href="/writing"><span {% if uri.path== '/writing' %}class="active" {% endif %}>Writing&nbsp;(7)</span></a>
+<a href="/contact"><span {% if uri.path== '/contact' %}class="active" {% endif %}>Contact</span></a>
+</div>
+{% include 'partials/tntsearch.html.twig' %}
+</div>
+<main>
+{% block content %}
+{% endblock %}
+</main>
+{% include 'partials/footer.html.twig' %}
+</body>
+</html>

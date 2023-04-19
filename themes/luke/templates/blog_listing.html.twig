@@ -1,0 +1,16 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+{{ page.content|raw }}
+{% for article in page.collection() %}
+<a href="{{ article.url }}">
+<div class="text-row">
+  <div class="text-column">
+<p class="strong">{{ article.title }}</p>
+  </div>
+  <div class="text-column-right grey">
+<p>{{ article.date|date('F Y') }}</p>
+ </div>
+</div>
+   </a>
+{% endfor %}
+{% endblock %}
