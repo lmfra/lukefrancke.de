@@ -1,2 +1,4 @@
 # lukefrancke.de
-Repository of my Grav CMS based website
+This repository contains user files of my website.
+---
+The files in the `pages` folder contain custom page content, the 
