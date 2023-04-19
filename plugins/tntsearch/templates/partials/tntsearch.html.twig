@@ -1,0 +1,19 @@
+{% set url = url|default(base_url|rtrim('/') ~ '/' ~ config.get('plugins.tntsearch.query_route', 's')|trim('/')) %}
+{% set limit = limit|default(config.get('plugins.tntsearch.limit', 20)) %}
+{% set snippet = snippet|default(config.get('plugins.tntsearch.snippet', 300)) %}
+{% set min = min|default(config.get('plugins.tntsearch.min', 3)) %}
+{% set search_type = search_type|default(config.get('plugins.tntsearch.search_type', 'auto')) %}
+{% set live_update = in_page ? live_update|default(config.get('plugins.tntsearch.live_uri_update', 1)) : 0 %}
+{% set nojs_action = config.get('plugins.tntsearch.search_route', '/search')|trim('/') %}
+{% set options = { uri: url, limit: limit, snippet: snippet, min: min, in_page: in_page, live_update: live_update, search_type: search_type } %}
+{% set placeholder = 'Search for keywords' %}
+<form role="form" action="{{ nojs_action }}" method="get">
+{% block tntsearch_input %}
+<input class="search-bar" name="q" data-tntsearch="{{ options|json_encode|e('html_attr') }}" placeholder="{{ placeholder }}" value="{{ not dropdown ? query|e : '' }}" required="">
+{% endblock %}
+<div>
+{% if tntsearch_results is defined and tntsearch_results is not empty and in_page %}
+{% include 'tntquery-ajax.html.twig' %}
+{% endif %}
+</div>
+</form>
