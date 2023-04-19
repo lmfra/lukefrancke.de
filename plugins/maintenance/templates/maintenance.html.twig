@@ -1,0 +1,100 @@
+{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="Luke Francke" />
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maintenance – Luke Francke</title>
+<link href="//lukefrancke.de/user/themes/luke/css/font.css?ver=1.2" rel="stylesheet">
+</head>
+<html>
+<style>
+body, html {
+height: 100%;
+margin: 0;
+font-family: 'Inter', sans-serif;
+-webkit-tap-highlight-color: transparent;
+}
+a {
+color: #232323;
+text-decoration: underline;
+}
+a:hover {
+color: #232323;
+text-decoration: none;
+}
+a:visited {
+color: #232323;
+text-decoration: underline;
+}
+a:active {
+color: #232323;
+text-decoration: underline;
+}
+.page {
+background-image: url('//lukefrancke.de/user/themes/luke/images/beach-croatia.jpeg');
+height: 100%;
+background-position: center;
+background-size: cover;
+color: #232323;
+font-size: 18px;
+}
+.box {
+position: absolute;
+width: 80%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 15px;
+text-align: center;
+border-radius: 7px;
+background: rgba( 240, 236, 252, 0.75 );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+backdrop-filter: blur(8px) saturate(180%);
+-webkit-backdrop-filter: blur( 8px ) saturate(180%);
+}
+.button {
+font-family: 'Inter', sans-serif;
+appearance: none;
+text-decoration: none !important;
+color: #364737;
+border: none;
+background: rgba(11, 21, 14, 0.08);
+padding: 6px 15px;
+border-radius: 7px;
+margin: 15px 0 15px 0;
+display: block;
+font-size: 16px;
+-webkit-animation: text .5s .25s both ease-out;
+}
+.button a {
+text-decoration: none !important;
+}
+.button:hover {
+background: rgba(54, 71, 56, 0.2);
+}
+.center-button {
+margin: 10px auto 10px auto;
+padding: 5px 20px;
+}
+@media only screen and (min-width: 720px) {
+.box {
+width: 50%;
+}
+}
+</style>
+<body>
+<div class="page">
+  <div class="box">
+<h1>Maintenance</h1>
+<p>I am hard at work, tidying up and bringing you some cool changes.</p>
+<p>Take a break - we’ll see in a few hours.</p> 
+	<button class="button center-button"><a href="/">retry</a></button>
+</div>
+</div>
+</body>
+</html>
+{% endblock %}
