@@ -1,0 +1,41 @@
+title: 'Luke Francke'
+default_lang: en
+author:
+  name: Luke
+  email: hello@lukefrancke.de
+taxonomies:
+  - category
+  - tag
+metadata:
+  title: 'Luke Francke'
+  description: 'Hi! I am Luke. Let''s create something special together.'
+  generator: Grav
+  referrer: no-referrer
+  theme-color: '#dddbe8'
+  'og:url': 'https://lukefrancke.de/'
+  'og:description': 'Hi! I am Luke. Let''s create something special together.'
+  'og:image': 'https://lukefrancke.de/user/themes/luke/images/ogimg.png'
+  'twitter:card': summary_large_image
+  'twitter:url': 'https://lukefrancke.de/'
+  'twitter:description': 'Hi! I am Luke. Let''s create something special together.'
+  'twitter:image': 'https://lukefrancke.de/user/themes/luke/images/ogimg.png'
+  revisit-after: '2 days'
+  mobile-web-app-capable: 'yes'
+  apple-mobile-web-app-capable: 'yes'
+  apple-mobile-web-app-status-bar-style: ''
+  apple-mobile-web-app-title: 'Luke Francke'
+summary:
+  enabled: true
+  format: short
+  size: 35
+  delimiter: '==='
+redirects:
+  /main: /
+  /thoughts: /writing
+  /defending-privacy: /writing
+routes:
+  /docs/legal.html: /docs/legal
+  /docs/privacy.html: /docs/privacy
+  /docs/cookies.html: /docs/cookies
+blog:
+  route: /blog
