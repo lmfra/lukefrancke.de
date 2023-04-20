@@ -249,15 +249,10 @@ border: none;
 cursor: pointer;
 font-size: 1rem;
 color: #232323;
-text-decoration: underline transparent;
-transition: text-decoration-color .5s;
 text-underline-offset: 0.25rem;
 touch-action: manipulation;
 user-select: none;
 -webkit-user-select: none;
-}
-.navmenu-btn:hover, .navmenu-btn:active {
-text-decoration: underline;
 }
 .close-section {
 width: 100%;
@@ -287,9 +282,7 @@ text-decoration: none;
 font-size: 1.75rem;
 border-bottom: 2px solid rgba( 0, 0, 0, 0.1 );
 transition: color .125s ease;
--webkit-animation: fade-rev .35s .125s both ease-out;
 }
-.navmenu-content a:nth-child(2) {-webkit-animation-delay: .25s;}.navmenu-content a:nth-child(3) {-webkit-animation-delay: .35s;}.navmenu-content a:nth-child(4) {-webkit-animation-delay: .45s;}.navmenu-content a:nth-child(5) {-webkit-animation-delay: .55s;}.navmenu-content a:nth-child(6) {-webkit-animation-delay: .65s;}
 .navmenu-content a:hover {
 color: #727272;
 }
@@ -298,23 +291,22 @@ font-style: italic;
 }
 .navmenu-content .search-bar {
 display: block;
-position: absolute;
-bottom: .125rem;
-left: 50%;
-transform: translateX(-50%);
--webkit-animation: opacity .35s .125s both ease-out;
+position: absolute !important;
+bottom: 0.5rem;
+left: 0;
+-webkit-animation: none .35s .125s both ease-out;
 }
 .show {
 display: block;
 position: fixed;
-right: 0;
+left: 0;
 top: 0;
 margin: 0;
 height: 100%;
 z-index: 999;
 background: #f8e9ff;
 background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%);
--webkit-animation: opacity .25s .125s both ease-out;
+-webkit-animation: menu .25s .125s both ease-out;
 }
 .hero-cover {
 margin: 15px 0 0 -10px;
@@ -534,7 +526,7 @@ border-right: none;
 border-left: none;
 color: #393939;
 font-size: 1rem !important;
-margin: 10px auto 16px auto;
+margin: 10px auto auto auto;
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23232323' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 14px center;
 -webkit-animation: none;
 }
@@ -809,10 +801,11 @@ transform: translatey(0);
 @keyframes menu {
 0% {
 opacity: 0;
-height: 65px;
+transform: translatey(-.5rem);
 }
 100% {
 opacity: 1;
+transform: translatey(0);
 }
 }
 @keyframes callout {
