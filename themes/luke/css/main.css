@@ -371,16 +371,13 @@ max-width: 85%;
 }
 footer {
 display: block;
+margin: 5px auto auto auto;
 padding: 15px 15px 10px 15px;
 width: 100%;
 background-color: #cad9e6;
 font-size: 14px;
 overflow: hidden;
 -webkit-animation: text .5s .25s both ease-out;
-}
-footer p {
-font-weight: 400;
-font-family: 'Plus Jakarta Sans', sans-serif;
 }
 footer a:hover {
 color: #666666 !important;
