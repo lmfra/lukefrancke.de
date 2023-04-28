@@ -41,7 +41,7 @@ outline: none !important;
 }
 .button {
 font-family: 'Plus Jakarta Sans', sans-serif;
-display: block;
+display: inline-block;
 appearance: none;
 text-decoration: none !important;
 color: rgba( 0, 0, 0, 0.6 ) !important;
@@ -406,13 +406,14 @@ font-size: 1.25rem;
 font-size: 13px;
 clear: both;
 }
-.column {
-float: left;
-max-width: 48%;
-margin-left: 5px;
-}
 .row {
 display: block;
+}
+.column {
+float: left;
+min-width: 48%;
+max-width: 48%;
+margin-left: 5px;
 }
 .column img {
 max-width: 100%;
@@ -661,7 +662,7 @@ width: 50%;
 }
 .header-logo {
 margin: 15px 0 0 15px;
-font-size: 1.8rem;
+font-size: 1.58rem;
 font-weight: 400;
 }
 .menu-cta {
