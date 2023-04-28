@@ -1,5 +1,6 @@
 ---
 title: About
+media_order: parler-manifest-icon.png
 ---
 
 <h1 class="page-title">About me</h1>
@@ -35,7 +36,26 @@ title: About
 <div class="collapsible-content">
 <p>I love exploring new places and traveling. It's so exciting to see the unknown and discover all the incredible sights and experiences that different destinations have to offer. <br />One of my favorite things to do while traveling is photograph beautiful experiences. I especially love capturing architecture and nature. <br />For me, photography is a way to freeze a moment in time and capture it forever. It allows me to capture the beauty of the world around us and share those experiences with others.</p><a class="button" href="/showcase">Photography</a>
 </div>
-<div class="space"></div>
-<div class="bordered">
+<button class="collapsible">I have collaborated with</button>
+<div class="collapsible-content">
+<div class="row">
+<div class="column">
+    <p><strong>Parler</strong></p>
+<ul>
+<li>Developed a new homescreen icon for the web app</li>
+<li>Beta testing of new versions</li>
+<li>Bug troubleshooting</li>
+<li>Structuring possible improvements to the UI</li>
+</ul>
+</div>
+<div class="column">
+    <p><strong>Mozilla Firefox</strong></p>
+<ul>
+<li>Bug troubleshooting</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="space bordered">
 <p class="small">Take a look at my <a href="/now">/now</a> page to see what i am doing right now.</p>
 </div>
