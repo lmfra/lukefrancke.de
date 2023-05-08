@@ -173,24 +173,22 @@ width: 300px;
 border: 2px solid rgba( 0, 0, 0, 0.1 );
 -webkit-animation: text .5s .25s both ease-out, image 1s linear;
 }
-.header {
+header {
 display: block;
 position: fixed;
 top: 0;
 left: 0;
 background: #f8e9ff;
-background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%);
+background: linear-gradient(90deg, rgba(224,241,255,.7) 0%, rgba(249,235,255,.7) 100%);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
 width: 100%;
 min-height: 60px;
-z-index: 2;
+z-index: 999;
 border-radius: 0 0;
 border-bottom: 2px solid rgba( 0, 0, 0, 0.1 );
 opacity: 1;
-transition: all 0.25s ease-in;
-}
-.header.hide {
-opacity: 0;
-top: -60px !important;
+transition: all 0.25s ease-out;
 }
 .header-logo {
 font-family: 'Plus Jakarta Sans', sans-serif;
@@ -257,28 +255,29 @@ overflow: hidden;
 z-index: 1;
 }
 .navmenu-links {
-margin: 0;
+margin: 5px 0 0 0;
 overflow-y: scroll !important;
 }
 .navmenu-content a {
 display: block;
 text-align: left;
 color: #232323;
-margin: auto 0 auto 25px;
-padding: 12px 0 12px 0;
+width: 95%;
+margin: auto;
+padding: .75rem 0 .75rem .75rem;
 text-decoration: none;
 font-size: 1.125rem;
-transition: color .125s ease;
+border-radius: 7px;
+transition: background-color .125s ease;
 }
 .navmenu-content a:hover {
-color: #727272;
+background-color: rgba(11, 21, 14, 0.08);
 }
 .show {
 display: block;
 margin: 0;
 z-index: 999;
-transform-origin: top right;
--webkit-animation: menu .1s ease-out;
+-webkit-animation: menu .15s ease-out;
 }
 .active {
 font-style: italic;
@@ -532,7 +531,9 @@ width: 100%;
 padding: 10px;
 text-align: center;
 background: #f8e9ff;
-background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%);
+background: linear-gradient(90deg, rgba(224,241,255,.7) 0%, rgba(249,235,255,.7) 100%);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
 border-top: 2px solid rgba( 0, 0, 0, 0.1 );
 -webkit-animation: callout .75s .5s both ease-out;
 -webkit-animation-delay: 1.5s;
@@ -584,32 +585,6 @@ max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
 }
-.loader {
-display: inline-block;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 2px;
-background: rgba(255, 255, 255, 0);
-overflow: hidden;
-}
-.loader::after {
-content: '';
-width: 192px;
-height: 2px;
-background: #232323;
-position: absolute;
-top: 0;
-left: 0;
-box-sizing: border-box;
-animation: preloader 2s linear infinite;
-}
-.loader.done {
-visibility: hidden;
-opacity: 0;
-transition: .5s all;
-}
 @media only screen and (min-width: 720px) {
 main {
 width: 60%;
@@ -619,7 +594,7 @@ ul, li {
 margin-left: auto;
 margin-right: auto;
 }
-.header {
+header {
 width: 100%;
 height: 60px;
 }
@@ -646,18 +621,18 @@ font-size: 1.58rem;
 font-weight: 400;
 }
 .navmenu-content .search-bar {
-position: fixed !important;
+position: absolute;
 top: 0;
-left: 70%;
+right: 10px;
 -webkit-animation: none;
-width: 300px;
+width: 20%;
 height: 40px;
 z-index: 999;
 }
 .navmenu-content {
 display: block;
-width: 75%;
-margin: 0 0 0 25%;
+width: 80%;
+margin: 0 0 0 20%;
 background: #e0f1ff;
 height: 55px;
 background: none;
@@ -676,9 +651,10 @@ width: 100%;
 z-index: 999;
 }
 .navmenu-content a {
-float: left;
-margin: auto 0 auto 0;
-padding: 12px 0 12px 15px;
+display: inline-block;
+margin: 8px 0 auto 0;
+padding: 0 0 12px 10px;
+width: auto;
 font-size: 1.125rem;
 border: none;
 -webkit-animation: none;
@@ -689,13 +665,20 @@ border: none !important;
 }
 .callout {
 text-align: left;
-bottom: 6rem;
-max-width: 24.8%;
+top: 50%;
+left: 5px;
+max-width: 18%;
 font-size: .935rem;
+background: transparent !important;
+backdrop-filter: none !important;
+-webkit-backdrop-filter: none !important;
 border-top: none !important;
 border-radius: 2px;
-background: transparent;
 animation: none;
+}
+.callout p {
+border-left: 4px solid red;
+padding-left: 5px;
 }
 .callout-close-container {
 display: none;
@@ -791,14 +774,12 @@ opacity: 1;
 transform: translatey(0);
 }
 }
-@keyframes preloader {
+@keyframes rotation {
 0% {
-left: 0;
-transform: translateX(-80%);
+transform: rotate(0deg);
 }
 100% {
-left: 100%;
-transform: translateX(0%);
+transform: rotate(360deg);
 }
 }
 @media (prefers-color-scheme: dark) {
@@ -808,9 +789,13 @@ filter: invert(100%) !important;
 img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
 filter: none !important;
 }
-html, body, .header {
+html, body, header {
 background: #253643;
 background: linear-gradient(90deg, #253643 0%, #1e2d3a 100%);
+}
+header {
+background: #253643;
+background: linear-gradient(90deg, rgba(37, 54, 67, .7) 0%, rgba(30, 45, 58, .7) 100%);
 }
 .menu-cta:hover {
 background: rgba(255, 255, 255, 0.05);
@@ -818,7 +803,7 @@ background: rgba(255, 255, 255, 0.05);
 .header-logo {
 color: #585f61;
 }
-.header, .menu-cta, .navmenu-content a {
+header, .menu-cta, .navmenu-content a {
 border-color: rgba( 255, 255, 255, 0.2 ) !important;
 }
 .callout {
@@ -860,7 +845,7 @@ border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 .navmenu-btn {
 color: #dcdcdc;
 }
-.navmenu-btn:active, .navmenu-btn:hover {
+.navmenu-btn:active, .navmenu-btn:hover, .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.05);
 }
 .close-section {
@@ -883,12 +868,9 @@ color: #dcdcdc;
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23dcdcdc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 14px center;
 -webkit-animation: none;
 }
-.loader::after {
-background: #dcdcdc;
-}
 @media only screen and (min-width: 720px) {
 .callout {
-background: transparent;
+background: transparent !important;
 }
 .navmenu-content {
 border: none !important;
@@ -930,4 +912,5 @@ border: none !important;
   font-weight: 600;
   font-display: swap;
   src: url(/user/themes/luke/css/plusjakartasans/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
