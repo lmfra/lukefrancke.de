@@ -652,8 +652,8 @@ z-index: 999;
 }
 .navmenu-content a {
 display: inline-block;
-margin: 8px 0 auto 0;
-padding: 0 0 12px 10px;
+margin: 2px 0 auto 0;
+padding: 5px 10px;
 width: auto;
 font-size: 1.125rem;
 border: none;
