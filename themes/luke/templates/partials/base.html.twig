@@ -14,15 +14,14 @@
 <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="https://lukefrancke.de/user/themes/luke/images/touchicon.png">
 <link rel="icon" href="/user/themes/luke/images/favicon-pre.ico" type="image/x-icon">
 <link rel="icon" type="image/png" href="/user/themes/luke/images/favicon-pre.ico">
-<link href="/user/themes/luke/css/main.css?ver=4.6.4" rel="stylesheet">
-<script defer src="/user/themes/luke/js/main.js?ver=1.2"></script>
+<link href="/user/themes/luke/css/main.css?ver=4.6.7" rel="stylesheet">
+<script defer src="/user/themes/luke/js/main.js?ver=1.2.1"></script>
 <!-- If you're reading this: We need more privacy - now! -->
 <link rel="canonical" href="{{ page.url(true)|e }}">
 {% endblock head%}
 </head>
 <body>
-<div id="site-header" class="header">
-<span class="loader" id="preloader"></span>
+<header>
 <h1 class="header-logo"><a href="/">Luke Francke</a></h1>
 <div onclick="navmenu()" class="navmenu-btn">Navigation<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#505050" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
 <div id="navmenu" class="navmenu-content">
@@ -31,12 +30,11 @@
 <a href="/about"><span {% if uri.path== '/about' %}class="active" {% endif %}>About</span></a>
 <a href="/now"><span {% if uri.path== '/now' %}class="active" {% endif %}>Now</span></a>
 <a href="/showcase"><span {% if uri.path== '/showcase' %}class="active" {% endif %}>Showcase</span></a>
-<a href="/writing"><span {% if uri.path== '/writing' %}class="active" {% endif %}>Writing&nbsp;(7)</span></a>
-<a href="/contact"><span {% if uri.path== '/contact' %}class="active" {% endif %}>Contact</span></a>
+<a href="/writing"><span {% if uri.path== '/writing' %}class="active" {% endif %}>Writing&nbsp;(6)</span></a>
 </div>
 {% include 'partials/tntsearch.html.twig' %}
 </div>
-</div>
+</header>
 <main>
 {% block content %}
 {% endblock %}
