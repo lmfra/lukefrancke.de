@@ -8,30 +8,29 @@ metadata:
 <div class="bordered">
 <p class="strong">This legal notice applies to my website or any of my sub-sites that will link to this page.</p>
 </div>
-<h2>Imprint</h2>
-<p class="grey">Information according to §5 of TMG</p>
-<div class="text-row">
-<div class="text-column">
-<p class="strong">Responsible for the content is</p>
+<p class="grey">Information according to German §5 of TMG and § 18 MStV</p>
+<div class="row">
+<div class="column">
+<p class="strong">Responsible for the content and journalistic texts is</p>
 </div>
-<div class="text-column-right">
+<div class="column">
 <p>Luke Francke</p>
 </div>
 </div>
-<div class="text-row">
-<div class="text-column">
+<div class="row">
+<div class="column">
 <p class="strong">Postal address</p>
 </div>
-<div class="text-column-right">
+<div class="column">
 <p>Hoogenboomlaan 42, 4325 DM Renesse, NL</p>
 </div>
 </div>
-<div class="text-row">
+<div class="row">
 <p class="red-note">For a standardized contact, see <a href="/contact">Contact</a>. In case of misuse of these contact details, e-mail address and telephone number, I reserve the right to take legal action.</p>
-<div class="text-column">
+<div class="column">
 <p class="strong">Contact</p>
 </div>
-<div class="text-column-right">
+<div class="column">
 <p>Phone: +49 1 56 78 75 65 09</p>
 <p>E-Mail: hello@lukefrancke.de</p>
 </div>
