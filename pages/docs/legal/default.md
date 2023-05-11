@@ -53,7 +53,6 @@ metadata:
 <button class="collapsible">Credits</button>
 <div class="collapsible-content">
 <p>Icons by <a href="https://feathericons.com/">Feather Icons</a><span class="external-icon"></span> (self-hosted).</p>
-<p>The social media link icons are symbols of the respective service providers and are intended to link profiles on these platforms.</p>
 </div>
 <button class="collapsible">Information according to &sect; 36 VSBG</button>
 <div class="collapsible-content">
