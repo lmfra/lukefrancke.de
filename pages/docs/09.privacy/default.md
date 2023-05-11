@@ -40,7 +40,7 @@ metadata:
 <h3>Responsible person</h3>
 <p>The person responsible within the meaning of the data protection laws, in particular the EU General Data Protection Regulation (GDPR), is:</p>
 <p>Luke Francke<br />hello@lukefrancke.de<br />+49 15 67 8 75 65 09</p>
-<p>Full contact details can be found here: <a href="/docs/legal.html">Imprint</a></p>
+<p>Full contact details can be found here: <a href="/docs/legal">Legal notice</a></p>
 <h3>Your rights as a data subject</h3>
 <p>You can exercise the following rights at any time using the contact details provided above:</p>
 <ul>
@@ -140,7 +140,7 @@ metadata:
 <p>If you file an objection, I will no longer process your personal data, unless I can prove compelling reasons worthy of protection for the processing that outweigh your interests, rights and freedoms, or the processing serves to assert, exercise or defend legal claims.</p>
 <p><span class="strong">Recipient:</span></p>
 <p>Luke Francke<br />hello@lukefrancke.de<br />+49 15 67 8 75 65 09</p>
-<p>Full contact details can be found here: <a href="/docs/legal.html">Imprint</a></p>
+<p>Full contact details can be found here: <a href="/docs/legal">Legal notice</a></p>
 <p><span class="strong">Changes to my privacy policy</span></p>
 <p>I reserve the right to adapt this privacy policy so that it always complies with the current legal requirements or to implement changes to my services, e.g. when introducing new services. The new privacy policy then applies to your next visit. The old version will be invalidated when the new version comes into force.</p>
 <p><br />This privacy policy was created with the help of <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/">activeMind AG, the experts for external data protection officers</a><span class="external-icon"></span> (version #2020-09-30). Some texts were added later.</p>
