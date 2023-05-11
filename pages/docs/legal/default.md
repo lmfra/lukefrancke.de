@@ -58,3 +58,4 @@ metadata:
 <div class="collapsible-content">
 <p>According to &sect; 36 VSBG (Consumer Dispute Settlement Act - Act on Alternative Dispute Resolution in Consumer Matters) the operator of this website declares: We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
 </div>
+<p class="grey">Last Updated: May 11, 2023</p>
