@@ -4,6 +4,7 @@ title: Colophon
 
 <h1 class="page-title">About this site: Colophon</h1>
 <p class ="grey">A quick summary of what makes this website run.</p>
+<p class="small">Some parts of this website are open source. See the source code on <a href="https://github.com/lmfra/lukefrancke.de">GitHub</a><span class="external-icon"></span></p>
 <button class="collapsible">Technology</button>
 <div class="collapsible-content">
 <p>Created with <a href="https://getgrav.org/">Grav</a><span class="external-icon"></span>, a flat-file, Symfony based CMS</p>
@@ -22,7 +23,7 @@ title: Colophon
 </div>
 <button class="collapsible">Colors</button>
 <div class="collapsible-content">
-<p>Background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%), font color: #232323<br />Dark mode background: linear-gradient(90deg, #253643 0%, #1e2d3a 100%), dark mode font color: #dcdcdc</p>
+<p>Background: #f2f2f2, font color: #232323<br />Dark mode background: #181818, dark mode font color: #dcdcdc</p>
 </div>
 <button class="collapsible">Icons</button>
 <div class="collapsible-content">
