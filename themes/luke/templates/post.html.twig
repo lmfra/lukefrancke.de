@@ -12,11 +12,10 @@
 {% endfor %}
 </p>
 <div class="divider"></div>
-<p class="red-note mobile-hidden centered">Sorry! On some computers, the share function does not work as it should. I will fix the problem soon.</p>
 <h3 class="centered">Share this post:</h3>
 <script>
-function share(){navigator.share&&navigator.share({url:"{{ page.url(true)|e }}"})}
+function copyToClipboard(e){var o=document.body.appendChild(document.createElement("input"));o.value=window.location.href,o.focus(),o.select(),document.execCommand("copy"),o.parentNode.removeChild(o),alert("Link copied.")}
 </script>
-<a href="javascript:void(0)" class="button center-button" onclick="share()"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4b4a4c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>Share</a>
+<a href="javascript:void(0)" class="button center-button" onclick="copyToClipboard()"><svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4b4a4c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>Copy link</a>
 </div>
 {% endblock %}
