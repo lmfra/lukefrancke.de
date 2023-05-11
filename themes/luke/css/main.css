@@ -3,8 +3,7 @@
 box-sizing: border-box;
 }
 body, html {
-background: #f8e9ff;
-background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%);
+background: #f2f2f2;
 width: 100%;
 margin: 0;
 font-family: 'Plus Jakarta Sans', sans-serif;
@@ -178,10 +177,10 @@ display: block;
 position: fixed;
 top: 0;
 left: 0;
-background: #f8e9ff;
-background: linear-gradient(90deg, rgba(224,241,255,.7) 0%, rgba(249,235,255,.7) 100%);
-backdrop-filter: blur(16px) saturate(1.5);
--webkit-backdrop-filter: blur(16px) saturate(1.5);
+background: #f2f2f2;
+background: rgba(242,242,242,.7);
+backdrop-filter: blur(20px) saturate(1.8);
+-webkit-backdrop-filter: blur(20px) saturate(1.8);
 width: 100%;
 min-height: 60px;
 z-index: 999;
@@ -325,8 +324,7 @@ pointer-events: none;
 }
 figcaption {
 position: absolute;
-background: #f8e9ff;
-background: linear-gradient(90deg, #e0f1ff 0%, #f9ebff 100%);
+background: #f2f2f2;
 color: #232323;
 font-size: .8rem;
 bottom: 1rem;
@@ -527,10 +525,10 @@ z-index: 5;
 width: 100%;
 padding: 10px;
 text-align: center;
-background: #f8e9ff;
-background: linear-gradient(90deg, rgba(224,241,255,.7) 0%, rgba(249,235,255,.7) 100%);
-backdrop-filter: blur(16px) saturate(1.5);
--webkit-backdrop-filter: blur(16px) saturate(1.5);
+background: #f2f2f2;
+background: rgba(242,242,242,.7);
+backdrop-filter: blur(20px) saturate(1.8);
+-webkit-backdrop-filter: blur(20px) saturate(1.8);
 border-top: 2px solid rgba( 0, 0, 0, 0.1 );
 -webkit-animation: callout .75s .5s both ease-out;
 -webkit-animation-delay: 1.5s;
@@ -786,26 +784,22 @@ filter: invert(100%) !important;
 img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
 filter: none !important;
 }
-html, body, header {
-background: #253643;
-background: linear-gradient(90deg, #253643 0%, #1e2d3a 100%);
+html, body {
+background: #181818;
 }
 header {
-background: #253643;
-background: linear-gradient(90deg, rgba(37, 54, 67, .7) 0%, rgba(30, 45, 58, .7) 100%);
-}
-.menu-cta:hover {
-background: rgba(255, 255, 255, 0.05);
+background: #181818;
+background: rgba(24, 24, 24, .7);
 }
 .header-logo {
 color: #585f61;
 }
-header, .menu-cta, .navmenu-content a {
+header, .menu-cta {
 border-color: rgba( 255, 255, 255, 0.2 ) !important;
 }
 .callout {
-background: #253643;
-background: linear-gradient(90deg, #253643 0%, #1e2d3a 100%);
+background: #181818;
+background: rgba(24, 24, 24, .7);
 border-top: 2px solid rgba( 255, 255, 255, 0.2 );
 }
 .bordered, .red-note {
@@ -852,8 +846,7 @@ border-bottom: 2px solid rgba( 255, 255, 255, 0.2 );
 border: 2px solid rgba( 255, 255, 255, 0.2 );
 }
 figcaption {
-background: #253643;
-background: linear-gradient(90deg, #253643 0%, #1e2d3a 100%);
+background: #181818;
 color: #dcdcdc;
 border: 1px solid rgba( 255, 255, 255, 0.2 );
 }
