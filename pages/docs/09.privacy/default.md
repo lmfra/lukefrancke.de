@@ -33,8 +33,8 @@ metadata:
 <p class="italic">(For more detailed information please read the legal version of my privacy policy below. This text just summarizes the full version and it is not intended for legal purposes.)</p>
 </div>
 <h2 id="full">Privacy Policy</h2>
-<p>Effective Date: March 17, 2022</p>
-<p>Last Updated: December 18, 2022</p>
+<p class="grey">Effective Date: March 17, 2022</p>
+<p class="grey">Last Updated: December 18, 2022</p>
 <p>The operator of these pages takes the protection of your personal data very seriously. I treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.</p>
 <p>I point out that data transmission over the Internet (eg communication by e-mail) can contain security gaps. A complete protection of the data against access by third parties is not possible.</p>
 <h3>Responsible person</h3>
