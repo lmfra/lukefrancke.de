@@ -109,6 +109,9 @@ font-weight: 600;
 .centered {
 text-align: center !important;
 }
+.right-aligned {
+text-align: right !important;
+}
 .small {
 font-size: .8rem;
 }
@@ -340,21 +343,24 @@ display: block;
 margin: 10px auto auto auto;
 padding: 15px 15px 10px 15px;
 width: 100%;
-background-color: #dadada;
+background-color: #252525;
 font-size: 14px;
 overflow: hidden;
 -webkit-animation: text .5s .25s both ease-out;
+}
+footer a {
+color: #ffffff !important;
 }
 footer a:hover {
 color: #666666 !important;
 }
 ul.footer-list {
 list-style: none;
-color: #232323;
 margin: 5px auto auto -15px;
 }
 ul.footer-list li {
 display: inline-block;
+color: #f7f7f7 !important;
 padding: 0 0.5rem 0 0;
 }
 ul.footer-list li a {
@@ -362,11 +368,11 @@ text-decoration: none !important;
 color: #232323;
 }
 ul.legal-list strong {
-color: #615f5e !important;
+color: #b0afaf !important;
 }
 ul.legal-list li a {
 text-decoration: none !important;
-color: #797776 !important;
+color: #908f8e !important;
 }
 .top-arrow {
 position: absolute;
@@ -377,8 +383,9 @@ right: 5px;
 font-size: 1.25rem;
 }
 .copy {
-font-size: 13px;
+font-size: .75rem;
 clear: both;
+color: #f7f7f7;
 }
 .row {
 display: block;
@@ -399,27 +406,6 @@ border-radius: 7px;
 content: "";
 display: table;
 clear: both;
-}
-.text-row {
-display: block;
-border-bottom: 2px solid rgba( 0, 0, 0, 0.2 );
-}
-.text-row::after {
-content: "";
-display: table;
-clear: both;
-}
-.text-column {
-float: left;
-max-width: 40%;
-margin-left: 5px;
-}
-.text-column-right {
-float: right;
-text-align: left !important;
-max-width: 60%;
-margin-right: 2px;
-font-size: .95rem;
 }
 .label {
 position: relative;
@@ -790,12 +776,10 @@ background: #181818;
 header {
 background: #181818;
 background: rgba(24, 24, 24, .7);
+border-color: rgba( 255, 255, 255, 0.2 ) !important;
 }
 .header-logo {
 color: #585f61;
-}
-header, .menu-cta {
-border-color: rgba( 255, 255, 255, 0.2 ) !important;
 }
 .callout {
 background: #181818;
@@ -815,7 +799,7 @@ color: rgba(255, 255, 255, 0.8) !important;
 .button:hover {
 background: rgba(255, 255, 255, 0.05);
 }
-.red-note, .callout, .search-bar::placeholder, .navmenu-content a {
+.red-note, .callout, .search-bar::placeholder, .navmenu-content a, .column a {
 color: #dcdcdc !important;
 }
 .hero-text {
@@ -829,12 +813,6 @@ text-decoration: none !important;
 }
 .hero-text a:hover {
 color: #9a9a9a !important;
-}
-.text-row {
-border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-.navmenu-btn {
-color: #dcdcdc;
 }
 .navmenu-btn:active, .navmenu-btn:hover, .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.05);
