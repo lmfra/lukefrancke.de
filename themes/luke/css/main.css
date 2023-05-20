@@ -224,14 +224,14 @@ animation: none;
 }
 .navmenu-btn {
 position: absolute;
-top: 7px;
+top: 9px;
 right: 10px;
 background: transparent;
-padding: 10px 13px 10px 17px;
-border-radius: 21px;
-border: none;
+padding: 6px 9px 6px 13px;
+border-radius: 7px;
+border: 2px solid rgba( 0, 0, 0, 0.1 );
 cursor: pointer;
-color: #838383;
+color: #797776;
 font-size: 1rem;
 transition: background 0.25s ease;
 touch-action: manipulation;
@@ -814,11 +814,15 @@ text-decoration: none !important;
 .hero-text a:hover {
 color: #9a9a9a !important;
 }
-.navmenu-btn:active, .navmenu-btn:hover, .navmenu-content a:hover {
+.navmenu-btn {
+color: #adadad;
+border-color: rgba( 255, 255, 255, 0.2 ) !important;
+}
+.navmenu-btn:hover, .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.05);
 }
-.close-section {
-border-bottom: 2px solid rgba( 255, 255, 255, 0.2 );
+.navmenu-btn:active {
+background: rgba(255, 255, 255, 0.1);
 }
 .image {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
