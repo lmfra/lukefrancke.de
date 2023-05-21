@@ -224,12 +224,12 @@ animation: none;
 }
 .navmenu-btn {
 position: absolute;
-top: 9px;
+top: 5px;
 right: 10px;
 background: transparent;
-padding: 6px 9px 6px 13px;
+padding: 10px;
 border-radius: 7px;
-border: 2px solid rgba( 0, 0, 0, 0.1 );
+border: none;
 cursor: pointer;
 color: #797776;
 font-size: 1rem;
@@ -240,7 +240,6 @@ user-select: none;
 }
 .navmenu-btn svg {
 vertical-align: middle;
-margin: 0 0 0 5px;
 }
 .navmenu-btn:hover {
 background: rgba(11, 21, 14, 0.08);
@@ -281,7 +280,8 @@ z-index: 999;
 -webkit-animation: menu .15s ease-out;
 }
 .active {
-font-style: italic;
+text-decoration: underline;
+text-underline-offset: 2px;
 }
 .navmenu-content .search-link {
 display: block;
@@ -816,7 +816,6 @@ color: #9a9a9a !important;
 }
 .navmenu-btn {
 color: #adadad;
-border-color: rgba( 255, 255, 255, 0.2 ) !important;
 }
 .navmenu-btn:hover, .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.05);
@@ -884,5 +883,4 @@ border: none !important;
   font-weight: 600;
   font-display: swap;
   src: url(/user/themes/luke/css/plusjakartasans/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+21
