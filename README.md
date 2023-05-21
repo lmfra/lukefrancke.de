@@ -10,3 +10,5 @@ This repository contains `/user` files of my website.
 **You are NOT allowed to use `/pages` contents for your own websites or to train AI projects.**
 
 **I am not the owner of any `/plugins` files.**
+
+For more visit my colophon page: https://lukefrancke.de/colophon
