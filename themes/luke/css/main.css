@@ -5,6 +5,7 @@ box-sizing: border-box;
 body, html {
 background: #f2f2f2;
 width: 100%;
+height: 100%;
 margin: 0;
 font-family: 'Plus Jakarta Sans', sans-serif;
 overflow-x: hidden;
@@ -17,7 +18,6 @@ text-rendering: optimizeLegibility;
 }
 main {
 margin: 100px 10px 0 10px;
-transition: all 0.6s ease;
 opacity: 1;
 }
 *::selection {
@@ -156,7 +156,6 @@ margin: 0 0 15px 0;
 text-decoration: none !important;
 }
 .bordered {
-background: rgba(11, 21, 14, 0.08);
 border: 2px solid rgba( 0, 0, 0, 0.1 );
 margin 5px 0;
 padding: 5px 15px;
@@ -550,6 +549,25 @@ max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
 }
+.feed {
+width: 100%;
+}
+.content {
+padding: 10px 0;
+}
+.feed-title {
+position: sticky;
+top: 60px;
+z-index: 9;
+padding: 5px 10px;
+background: #f2f2f2;
+background: rgba(242,242,242,.7);
+backdrop-filter: blur(20px) saturate(1.8);
+-webkit-backdrop-filter: blur(20px) saturate(1.8);
+border-bottom: 2px solid rgba( 0, 0, 0, 0.1 );
+font-size: 1.05rem;
+font-weight: 600;
+}
 @media only screen and (min-width: 720px) {
 main {
 width: 60%;
@@ -751,7 +769,7 @@ transform: rotate(360deg);
 p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .callout svg, .search-icon, .bordered .button svg, .navmenu-btn svg, .collapsible, .hero-text svg, .navmenu-content svg {
 filter: invert(100%) !important;
 }
-img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
+img, .red-note, footer, footer p, footer svg, footer li, .hero-text, .feed-title {
 filter: none !important;
 }
 html, body {
@@ -765,13 +783,16 @@ border-color: rgba( 255, 255, 255, 0.2 ) !important;
 .header-logo {
 color: #585f61;
 }
+.feed-title {
+color: #585f61;
+background: #181818;
+background: rgba(24, 24, 24, .7);
+border-color: rgba( 255, 255, 255, 0.2 ) !important;
+}
 .callout {
 background: #181818;
 background: rgba(24, 24, 24, .7);
 border-top: 2px solid rgba( 255, 255, 255, 0.2 );
-}
-.bordered, .red-note {
-background-color: #585f61 !important;
 }
 .bordered {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
@@ -797,9 +818,6 @@ text-decoration: none !important;
 }
 .hero-text a:hover {
 color: #9a9a9a !important;
-}
-.navmenu-btn {
-color: #adadad;
 }
 .navmenu-btn:hover, .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.05);
