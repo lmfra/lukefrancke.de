@@ -1,27 +1,14 @@
 ---
 title: Feed
 ---
-
 <h1 class="page-title">Feed</h1>
 <div class="feed">
     <div class="content">
-      <p class="feed-title grey">2016</p>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p class="feed-title grey">May 22, 2023</p>
+      <p>We should certainly not wait for large companies to implement more privacy protection. It is important not to use or block privacy-invasive services.</p>
     </div>
-    <div class="content">
-      <p class="feed-title grey">2016</p>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-    <div class="content">
-      <p class="feed-title grey">2016</p>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-    <div class="content">
-      <p class="feed-title grey">2016</p>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-    <div class="content">
-      <p class="feed-title grey">2016</p>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+        <div class="content">
+      <p class="feed-title grey">May 22, 2023</p>
+      <p>Welcome to my feed.</p>
     </div>
 </div>
