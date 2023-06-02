@@ -1,5 +1,5 @@
 ---
-title: Writing
+title: Journal
 published: true
 content:
     items: '@self.children'
