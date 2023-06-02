@@ -10,4 +10,4 @@ content:
     pagination: true
 ---
 
-<h1 class="page-title">Writing</h1>
+<h1 class="page-title">Journal</h1>
