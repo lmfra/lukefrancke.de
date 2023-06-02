@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 {% block content %}
 <h1 class="blog-title">{{ page.title }}</h1>
-<p class="backlink"><a href="/writing">back to overview</a></p>
+<p class="backlink"><a href="/journal">back to overview</a></p>
 <p class="date strong grey">{{ page.date|date('F d, Y') }}</p>
 <div class="divider"></div>
 {{ content | raw }}
