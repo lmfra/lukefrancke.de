@@ -198,7 +198,7 @@ text-align: left;
 color: #232323;
 font-size: 1.25rem;
 z-index: 0;
-margin: 15px 0 auto 15px;
+margin: 17px 0 auto 15px;
 letter-spacing: 1px;
 user-select: none;
 -webkit-user-select: none;
@@ -209,10 +209,11 @@ text-decoration: none;
 }
 .navmenu-btn {
 position: absolute;
-top: 5px;
+top: 15px;
 right: 10px;
+color: #232323;
 background: transparent;
-padding: 10px;
+padding: 5px 10px;
 border-radius: 7px;
 border: none;
 cursor: pointer;
@@ -220,9 +221,6 @@ transition: background 0.25s ease;
 touch-action: manipulation;
 user-select: none;
 -webkit-user-select: none;
-}
-.navmenu-btn svg {
-vertical-align: middle;
 }
 .navmenu-btn:hover {
 background: rgba(11, 21, 14, 0.08);
@@ -256,7 +254,7 @@ transition: all .125s ease;
 .navmenu-content a:hover {
 background-color: rgba(11, 21, 14, 0.08);
 }
-.show {
+.navmenu-content.show {
 display: block;
 margin: 0;
 z-index: 999;
@@ -277,7 +275,7 @@ height: auto;
 pointer-events: none;
 }
 .hero-text {
-margin: 10px 0;
+margin: 25px 0;
 font-size: 1.65rem;
 font-weight: 600;
 line-height: 1.5;
@@ -464,10 +462,8 @@ float: right;
 width: 100%;
 padding: 10px 10px 10px 35px;
 display: block;
-border-radius: 1px;
+border-radius: 7px;
 border: 2px solid rgba( 0, 0, 0, 0.1 );
-border-right: none;
-border-left: none;
 color: #393939;
 font-size: 1rem !important;
 margin: 10px auto auto auto;
@@ -481,38 +477,10 @@ color: #393939;
 font-size: 20px;
 }
 .result-desc {
-font-size: 12px;
+font-size: 1rem;
 }
 .result-desc a {
 text-decoration: none;
-}
-.callout {
-position: fixed;
-bottom: 0;
-left: 0;
-z-index: 5;
-width: 100%;
-padding: 10px;
-text-align: center;
-background: #f2f2f2;
-background: rgba(242,242,242,.7);
-backdrop-filter: blur(20px) saturate(1.8);
--webkit-backdrop-filter: blur(20px) saturate(1.8);
-border-top: 2px solid rgba( 0, 0, 0, 0.1 );
--webkit-animation: callout .75s .5s both ease-out;
--webkit-animation-delay: 1.5s;
-}
-.callout p {
-animation: none;
-}
-.callout-close-container {
-display: block;
-width: 100%;
-height: 15px;
-}
-.callout-close {
-float: right;
-margin: auto 10px auto auto;
 }
 .collapsible {
 background: transparent;
@@ -548,32 +516,6 @@ padding: 0 15px;
 max-height: 0;
 overflow: hidden;
 transition: max-height 0.2s ease-out;
-}
-.feed {
-width: 100%;
-}
-.content {
-padding: 10px 0;
-}
-.feed-title {
-position: sticky;
-top: 60px;
-z-index: 9;
-padding: 5px 10px;
-max-width: 60%;
-background: #f2f2f2;
-background: rgba(242,242,242,.7);
-backdrop-filter: blur(20px) saturate(1.8);
--webkit-backdrop-filter: blur(20px) saturate(1.8);
-border-bottom: 2px solid rgba( 0, 0, 0, 0.1 );
-border-left: 2px solid rgba( 0, 0, 0, 0.1 );
-border-right: 2px solid rgba( 0, 0, 0, 0.1 );
-font-size: 1.05rem;
-font-weight: 600;
-border-radius: 0 0 7px 7px;
-pointer-events: none;
-user-select: none;
--webkit-user-select: none;
 }
 @media only screen and (min-width: 720px) {
 main {
@@ -652,35 +594,6 @@ border: none;
 .navmenu-btn {
 display: none;
 border: none !important;
-}
-.callout {
-text-align: left;
-top: 50%;
-left: 5px;
-max-width: 18%;
-font-size: .935rem;
-background: transparent !important;
-backdrop-filter: none !important;
--webkit-backdrop-filter: none !important;
-border-top: none !important;
-border-radius: 2px;
-animation: none;
-}
-.callout p {
-border-left: 4px solid red;
-padding-left: 5px;
-}
-.callout-close-container {
-display: none;
-}
-.start-container {
-max-width: 70%;
-margin: 400px 20% 250px 30%;
-}
-.start-middle {
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 }
 figure img {
 max-width: 50%;
@@ -773,10 +686,10 @@ transform: rotate(360deg);
 }
 }
 @media (prefers-color-scheme: dark) {
-p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .callout svg, .search-icon, .bordered .button svg, .navmenu-btn svg, .collapsible, .hero-text svg, .navmenu-content svg {
+p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .search-icon, .bordered .button svg, .collapsible, .hero-text svg, .navmenu-content svg {
 filter: invert(100%) !important;
 }
-img, .red-note, footer, footer p, footer svg, footer li, .hero-text, .feed-title {
+img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
 filter: none !important;
 }
 html, body {
@@ -790,17 +703,6 @@ border-color: rgba( 255, 255, 255, 0.2 ) !important;
 .header-logo {
 color: #585f61;
 }
-.feed-title {
-color: #585f61;
-background: #181818;
-background: rgba(24, 24, 24, .7);
-border-color: rgba( 255, 255, 255, 0.2 ) !important;
-}
-.callout {
-background: #181818;
-background: rgba(24, 24, 24, .7);
-border-top: 2px solid rgba( 255, 255, 255, 0.2 );
-}
 .bordered {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
 }
@@ -811,7 +713,7 @@ color: rgba(255, 255, 255, 0.8) !important;
 .button:hover {
 background: rgba(255, 255, 255, 0.05);
 }
-.red-note, .callout, .search-bar::placeholder, .navmenu-content a, .column a {
+.red-note, .navmenu-btn, .search-bar::placeholder, .navmenu-content a, .column a {
 color: #dcdcdc !important;
 }
 .hero-text {
@@ -842,16 +744,11 @@ border: 1px solid rgba( 255, 255, 255, 0.2 );
 }
 .search-bar {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
-border-right: none;
-border-left: none;
 color: #dcdcdc;
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23dcdcdc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 14px center;
 -webkit-animation: none;
 }
 @media only screen and (min-width: 720px) {
-.callout {
-background: transparent !important;
-}
 .navmenu-content {
 border: none !important;
 }
@@ -892,4 +789,5 @@ border: none !important;
   font-weight: 600;
   font-display: swap;
   src: url(/user/themes/luke/css/plusjakartasans/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+21
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+21;
+}
