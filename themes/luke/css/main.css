@@ -38,6 +38,10 @@ border-radius: 7px;
 input:focus {
 outline: none !important;
 }
+.muted {
+user-select: none;
+-webkit-user-select: none;
+}
 .button {
 font-family: 'Plus Jakarta Sans', sans-serif;
 display: inline-block;
@@ -56,6 +60,10 @@ transition: background .25s linear;
 }
 .button:hover {
 background: rgba(54, 71, 56, 0.1);
+}
+.large-button {
+font-size: 1.175rem;
+padding: 6px 12px;
 }
 .center-button {
 display: block;
@@ -267,30 +275,35 @@ text-underline-offset: 2px;
 .navmenu-content .search-link {
 display: block;
 }
-.hero-cover {
-margin: 15px 0 0 -10px;
-max-width: 110%;
-height: auto;
--webkit-animation: fade .5s .25s both ease-out;
-pointer-events: none;
-}
 .hero-text {
-margin: 25px 0;
-font-size: 1.65rem;
+margin: 125px 0 0 0;
+font-size: 2rem;
 font-weight: 600;
 line-height: 1.5;
 color: #232323;
 -webkit-animation: fade .5s .25s both ease-out 750ms;
+background: hsla(205, 46%, 10%, 1);
+background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
-.hero-text a {
+.hero-text .button {
+background: none !important;
+-webkit-background-clip: none;
+-webkit-text-fill-color: #232323;
 color: #464646 !important;
 font-weight: 400;
 text-decoration: none !important;
 transition: color .25s;
 -webkit-animation: fade .5s .25s both ease-out 750ms;
 }
-.hero-text a:hover {
+.hero-text .button:hover {
 color: #7e7e7e !important;
+}
+.bottom-text {
+margin-top: 2.5rem;
 }
 figure {
 position: relative;
@@ -321,7 +334,7 @@ max-width: 85%;
 }
 footer {
 display: block;
-margin: 10px auto auto auto;
+margin: 5rem auto auto auto;
 padding: 15px 15px 10px 15px;
 width: 100%;
 background-color: #252525;
@@ -354,11 +367,6 @@ color: #b0afaf !important;
 ul.legal-list li a {
 text-decoration: none !important;
 color: #908f8e !important;
-}
-.top-arrow {
-position: absolute;
-top: 10px;
-right: 5px;
 }
 .date {
 font-size: 1.25rem;
@@ -530,23 +538,6 @@ header {
 width: 100%;
 height: 60px;
 }
-.hero img {
-height: 600px !important;
-}
-footer {
-padding: 15px 15px 15px 20% !important;
-}
-.top-arrow {
-position: absolute;
-top: 10px;
-right: 15%;
-}
-.stpg-heading {
-margin-top: 25px;
-}
-.image-preview {
-width: 50%;
-}
 .header-logo {
 margin: 15px 0 0 15px;
 font-size: 1.58rem;
@@ -594,6 +585,17 @@ border: none;
 .navmenu-btn {
 display: none;
 border: none !important;
+}
+.hero-text {
+margin: 25vh 0 0 0;
+font-size: 2.5rem;
+}
+.bottom-text {
+margin: 8rem 0 0 0;
+}
+footer {
+margin: 8rem 0 0 0;
+padding: 15px 15px 15px 20% !important;
 }
 figure img {
 max-width: 50%;
@@ -717,10 +719,16 @@ background: rgba(255, 255, 255, 0.05);
 color: #dcdcdc !important;
 }
 .hero-text {
-color: #ffffff;
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent !important;
+background: hsla(263, 42%, 65%, 1);
+background: linear-gradient(315deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+background: -moz-linear-gradient(315deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+background: -webkit-linear-gradient(315deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
 }
-.hero-text a {
-color: #dcdcdc !important;
+.hero-text .button {
+-webkit-background-clip: none !important;
+-webkit-text-fill-color: #dcdcdc !important;
 font-weight: 400;
 text-decoration: none !important;
 -webkit-animation: fade .5s .25s both ease-out 750ms;
@@ -729,10 +737,10 @@ text-decoration: none !important;
 color: #9a9a9a !important;
 }
 .navmenu-btn:hover, .navmenu-content a:hover {
-background: rgba(255, 255, 255, 0.05);
-}
-.navmenu-btn:active {
 background: rgba(255, 255, 255, 0.1);
+}
+.navmenu-btn:active, .navmenu-content a:active {
+background: rgba(255, 255, 255, 0.2);
 }
 .image {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
