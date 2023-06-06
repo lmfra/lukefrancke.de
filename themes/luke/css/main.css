@@ -5,7 +5,6 @@ box-sizing: border-box;
 body, html {
 background: #f2f2f2;
 width: 100%;
-height: 100%;
 margin: 0;
 font-family: 'Plus Jakarta Sans', sans-serif;
 overflow-x: hidden;
@@ -18,7 +17,6 @@ text-rendering: optimizeLegibility;
 }
 main {
 margin: 100px 10px 0 10px;
-opacity: 1;
 }
 *::selection {
 color: #fff;
@@ -63,6 +61,7 @@ background: rgba(54, 71, 56, 0.1);
 }
 .large-button {
 font-size: 1.175rem;
+margin: 25px auto 10px 0;
 padding: 6px 12px;
 }
 .center-button {
@@ -276,7 +275,8 @@ text-underline-offset: 2px;
 display: block;
 }
 .hero-text {
-margin: 125px 0 0 0;
+position: relative;
+margin: 25px 0 0 0;
 font-size: 2rem;
 font-weight: 600;
 line-height: 1.5;
@@ -649,16 +649,6 @@ opacity: 1;
 transform: translatey(0);
 }
 }
-@keyframes fade-rev {
-0% {
-opacity: 0;
-transform: translatey(-4.25rem);
-}
-100% {
-opacity: 1;
-transform: translatey(0);
-}
-}
 @keyframes menu {
 0% {
 opacity: 0;
@@ -669,24 +659,6 @@ opacity: 1;
 transform: translateY(0);
 }
 }
-@keyframes callout {
-0% {
-opacity: 0;
-transform: translatey(20rem);
-}
-100% {
-opacity: 1;
-transform: translatey(0);
-}
-}
-@keyframes rotation {
-0% {
-transform: rotate(0deg);
-}
-100% {
-transform: rotate(360deg);
-}
-}
 @media (prefers-color-scheme: dark) {
 p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .search-icon, .bordered .button svg, .collapsible, .hero-text svg, .navmenu-content svg {
 filter: invert(100%) !important;
@@ -695,12 +667,14 @@ img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
 filter: none !important;
 }
 html, body {
-background: #181818;
+background: #000000;
 }
 header {
-background: #181818;
-background: rgba(24, 24, 24, .7);
+background: #000000;
+background: rgba(0, 0, 0, .7);
 border-color: rgba( 255, 255, 255, 0.2 ) !important;
+backdrop-filter: blur(20px) saturate(1.8);
+-webkit-backdrop-filter: blur(20px) saturate(1.8);
 }
 .header-logo {
 color: #585f61;
@@ -737,10 +711,10 @@ text-decoration: none !important;
 color: #9a9a9a !important;
 }
 .navmenu-btn:hover, .navmenu-content a:hover {
-background: rgba(255, 255, 255, 0.1);
+background: rgba(255, 255, 255, 0.15);
 }
 .navmenu-btn:active, .navmenu-content a:active {
-background: rgba(255, 255, 255, 0.2);
+background: rgba(255, 255, 255, 0.25);
 }
 .image {
 border: 2px solid rgba( 255, 255, 255, 0.2 );
