@@ -195,7 +195,12 @@ min-height: 60px;
 z-index: 999;
 border-bottom: 2px solid rgba( 0, 0, 0, 0.1 );
 opacity: 1;
-transition: all 0.25s ease-out;
+transition: all 0.25s ease;
+}
+#site-header.hide {
+visibility: hidden;
+opacity: 0;
+top: -60px !important;
 }
 .header-logo {
 font-family: 'Plus Jakarta Sans', sans-serif;
