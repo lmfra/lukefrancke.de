@@ -4,7 +4,7 @@ published: true
 ---
 
 <h1 class="page-title">/now</h1>
-<p><span class="small grey">last updated: June 21, 2023</span></p>
+<p><span class="small grey">last updated: June 28, 2023</span></p>
 <button class="collapsible">Free time</button>
 <div class="collapsible-content">
 <p>Planning the future. <br />Enjoying the beauty of summer. <br />Spending some time with Lio, the Havanese Dog. <br />Developing new features for this site and some other projects.</p>
