@@ -11,27 +11,17 @@ metadata:
 <p><span class="strong">In short:</span> On this website I try to contrast other websites. I take your privacy seriously. This is what you can expect when visiting my website or sub-site that will link to this privacy policy page.<br /><span class="strong">I don’t resell any personal data I have. Ever.</span> My website is and will remain free of tracking and advertising. I do not use Google services or those that compromise your privacy.</p>
 <button class="collapsible">Show a summary of this privacy policy</button>
 <div class="collapsible-content">
-<button class="collapsible">Log files</button>
-<div class="collapsible-content">
+<p class="strong">Log files</p>
 <p>Being collected, but only anonymized IP address, e.g. 192.168.xxx.xxx and randomly created ID of the access (x-lima-id), Request method (GET), HTTP Status Code (e.g. 200).</p>
-</div>
-<button class="collapsible">Cookies</button>
-<div class="collapsible-content">
+<p class="strong">Cookies</p>
 <p>Some necessary cookies are used (for security purposes), they do not contain any personal data <a href="#cookies">more</a>.</p>
-</div>
-<button class="collapsible">Encryption</button>
-<div class="collapsible-content">
+<p class="strong">Encryption</p>
 <p>Encrypted by SSL/TLS.</p>
-</div>
-<button class="collapsible">Contact</button>
-<div class="collapsible-content">
+<p class="strong">Contact</p>
 <p>When you contact me, some contact details (for example Email address, Name, data you entered or IP-addresses) may be transmitted and stored to fulfill your request.</p>
-</div>
-<button class="collapsible">Web hosting</button>
-<div class="collapsible-content">
+<p class="strong">Web hosting</p>
 <p>Data is stored exclusively in a highly secured data center in Frankfurt am Main, Germany.</br>I have concluded a data processing agreement with my web hosting provider.</p>
-</div>
-<p class="italic">(For more detailed information please read the legal version of my privacy policy below. This text just summarizes the full version and it is not intended for legal purposes.)</p>
+<p class="small italic">(For more detailed information please read the legal version of my privacy policy below. This text just summarizes the full version and it is not intended for legal purposes.)</p>
 </div>
 </div>
 <h2>Privacy Policy</h2>
@@ -44,18 +34,18 @@ metadata:
 <p>Luke Francke<br />hello@lukefrancke.de<br />+49 15 67 8 75 65 09</p>
 <p>Full contact details can be found here: <a href="/docs/legal">Legal notice</a></p>
 <h3>Your rights as a data subject</h3>
-<p>You can exercise the following rights at any time using the contact details provided above:</p>
+<p>You can exercise the following rights at any time:</p>
 <ul>
 <li>Information about your data stored by me and their processing (Art. 15 GDPR),</li>
 <li>Correction of incorrect personal data (Art. 16 GDPR),</li>
 <li>Deletion of your data stored by me (Art. 17 GDPR),</li>
 <li>Restriction of data processing if I am not yet allowed to delete your data due to legal obligations (Art. 18 GDPR),</li>
-<li>Objection to the processing of your data by me (Art. 21 GDPR) and</li>
-<li>Data portability, provided that you have consented to data processing or have concluded a contract with me (Art. 20 GDPR)</li>
+<li>Objection to the processing of your data by me (Art. 21 GDPR),</li>
+<li>Data portability, provided that you have consented to data processing or have concluded a contract with me (Art. 20 GDPR) and to</li>
+<li>File a complaint about the data processing of this website with a (data protection) supervisory authority (Art. 77 GDPR).</li>
 </ul>
 <p class="strong">If you have given me your consent, you can revoke it at any time with effect for the future.</p>
-<p>Right to complain to a supervisory authority: Pursuant to Art. 77 GDPR, you may lodge a complaint about the data processing of this website with a supervisory authority. As a rule, you can contact the supervisory authority of your usual place of residence for this purpose.</p>
-<p>A list of German supervisory authorities (for the non-public sector) can be found at: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html</a><span class="external-icon"></span></p>
+<p></p>
 <h3>Collection of general information when visiting my website</h3>
 <h4>Type and purpose of processing:</h4>
 <p>When you visit my website, your browser systematically sends certain information to the server. These are necessary for a connection between the end device and the server. The web hosting provider stores this data of the accesses in a log file. The legal basis for the data processing is Art. 6 para. 1 lit. f GDPR. My legitimate interest follows from listed purposes for data collection. I never use the collected data for the purpose of drawing conclusions about your person.</p>
