@@ -4,11 +4,13 @@ metadata:
     robots: noindex
 ---
 
-<h1 class="page-title">Your privacy on this website</h1><a href="#full" class="button">scroll down to full privacy policy ↓</a>
+<h1 class="page-title">Your privacy on this website</h1>
 <div class="bordered">
 <p class="strong">This privacy policy applies to my website or any of my sub-sites that will link to this page.</p>
 <div class="divider"></div>
-<p><span class="strong">In short:</span> On this website I try to contrast other websites. I take your privacy seriously. This is what you can expect when visiting my website or sub-site that will link to this privacy policy page. I summarized the content of the privacy below right here:</p>
+<p><span class="strong">In short:</span> On this website I try to contrast other websites. I take your privacy seriously. This is what you can expect when visiting my website or sub-site that will link to this privacy policy page.<br /><span class="strong">I don’t resell any personal data I have. Ever.</span> My website is and will remain free of tracking and advertising. I do not use Google services or those that compromise your privacy.</p>
+<button class="collapsible">Show a summary of this privacy policy</button>
+<div class="collapsible-content">
 <button class="collapsible">Log files</button>
 <div class="collapsible-content">
 <p>Being collected, but only anonymized IP address, e.g. 192.168.xxx.xxx and randomly created ID of the access (x-lima-id), Request method (GET), HTTP Status Code (e.g. 200).</p>
@@ -29,12 +31,12 @@ metadata:
 <div class="collapsible-content">
 <p>Data is stored exclusively in a highly secured data center in Frankfurt am Main, Germany.</br>I have concluded a data processing agreement with my web hosting provider.</p>
 </div>
-<p><span class="strong">I don’t resell any personal data I have. Ever.</span> My website is and will remain free of tracking and advertising. I do not use Google services or those that compromise your privacy.</p>
 <p class="italic">(For more detailed information please read the legal version of my privacy policy below. This text just summarizes the full version and it is not intended for legal purposes.)</p>
 </div>
-<h2 id="full">Privacy Policy</h2>
+</div>
+<h2>Privacy Policy</h2>
 <p class="grey">Effective Date: March 17, 2022</p>
-<p class="grey">Last Updated: December 18, 2022</p>
+<p class="grey">Last Updated: July 22, 2023</p>
 <p>The operator of these pages takes the protection of your personal data very seriously. I treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.</p>
 <p>I point out that data transmission over the Internet (eg communication by e-mail) can contain security gaps. A complete protection of the data against access by third parties is not possible.</p>
 <h3>Responsible person</h3>
@@ -51,20 +53,20 @@ metadata:
 <li>Objection to the processing of your data by me (Art. 21 GDPR) and</li>
 <li>Data portability, provided that you have consented to data processing or have concluded a contract with me (Art. 20 GDPR)</li>
 </ul>
-<p>If you have given me your consent, you can revoke it at any time with effect for the future.</p>
-<p>You can contact a supervisory authority at any time with a complaint, e.g. to the competent supervisory authority of the federal state of your residence or to the authority responsible for us as the responsible body.</p>
-<p>A list of supervisory authorities (for the non-public sector) can be found at: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html</a><span class="external-icon"></span></p>
+<p class="strong">If you have given me your consent, you can revoke it at any time with effect for the future.</p>
+<p>Right to complain to a supervisory authority: Pursuant to Art. 77 GDPR, you may lodge a complaint about the data processing of this website with a supervisory authority. As a rule, you can contact the supervisory authority of your usual place of residence for this purpose.</p>
+<p>A list of German supervisory authorities (for the non-public sector) can be found at: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html">https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html</a><span class="external-icon"></span></p>
 <h3>Collection of general information when visiting my website</h3>
 <h4>Type and purpose of processing:</h4>
-<p>The web hosting provider stores log data of the accesses. In the process, the following data is collected for security purposes (including detection of DDoS attacks, access control, detection of brute force attacks and prevention of spam) pursuant to Art. 6 para. 1 lit. f GDPR in conjunction with. Art. 28 GDPR, the following data is collected that is or could be personal data:</p>
+<p>When you visit my website, your browser systematically sends certain information to the server. These are necessary for a connection between the end device and the server. The web hosting provider stores this data of the accesses in a log file. The legal basis for the data processing is Art. 6 para. 1 lit. f GDPR. My legitimate interest follows from listed purposes for data collection. I never use the collected data for the purpose of drawing conclusions about your person.</p>
+ <p>The following data is stored:</p>
 <ul>
 <li>IP address (anonymized, e.g. 192.168.xxx.xxx)</li>
 <li>randomly created ID of the access (x-lima-id)</li>
 <li>request method (GET)</li>
 <li>HTTP status code (e.g. 200)</li>
 </ul>
-<p>The following fields are stored, but are generally not personal in the sense of the GDPR:
-<br />
+<p>The following data is stored, but is generally not personal data in the sense of the GDPR:</p>
 <ul>
 <li>User-Agent-Header (e.g. Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36)</li>
 </ul>
@@ -72,10 +74,8 @@ metadata:
 <ul>
 <li>Ensuring a problem-free connection of the website,</li>
 <li>Ensuring the use of my website,</li>
-<li>Detection of DDoS attacks and brute force attacks and</li>
-<li>Evaluation of system security and stability</li>
 </ul>
-<p>I do not use your data to draw conclusions about your person. Information of this kind may be collected and statistically evaluated by the web hosting provider in order to secure the website and the technology behind it. However, the collected logs may be used and disclosed upon order of a court of law, upon request by an investigative authority, or for evidentiary purposes.</p>
+<p>I do not use your data to draw conclusions about your person. Information of this kind may be collected by my web hosting provider lima-city in order to secure the website and the technology behind it. However, the collected logs may be used and disclosed upon order of a court of law, upon request by an investigative authority, or for evidentiary purposes.</p>
 <p><span class="strong">Legal basis and legitimate interest:</span></p>
 <p>The processing is carried out in accordance with Art. 6 Para. 1 lit. f GDPR on the basis of my legitimate interest in ensuring the security and functionality of my website.</p>
 <p><span class="strong">Recipient:</span></p>
@@ -118,7 +118,7 @@ metadata:
 </ul>
 <p>In these cookies, no personal data is stored.</p>
 <h3>Security and Performance</h3>
-<h4>Server locations and server providers</h4>
+<h4 id="servers">Server locations and server providers</h4>
 <p>I process your personal data exclusively in data centers in the Federal Republic of Germany and are therefore subject to European as well as German (data protection) laws. The provider of the servers used is currently lima-city of TrafficPlex GmbH. The servers of this site are currently located in Telehouse data center, Frankfurt am Main, Germany. The server provider has no access to the data on the server operated by us and accordingly no access to personal data of the users. The provider has contractually agreed to maintain confidentiality about data generated in network traffic.</p>
 <p>I have concluded a data processing agreement with my web hosting provider. This is a contract required by data protection laws, which ensures that this provider only processes the personal data of my website visitors in accordance with my instructions and in compliance with the legislation of data protection laws.</p>
 <h3 id="contact">Contact with E-Mail or other services</h2>
@@ -127,15 +127,15 @@ metadata:
 <p><span class="strong">Legal basis:</span></p>
 <p>The processing of the data entered is based on a legitimate interest (Art. 6 para. 1 lit. f GDPR).<br />The information you provide will be stored for the purpose of processing the request and for possible follow-up questions. This can include IP-addresses, contact details like email-addresses or data you entered.</p>
 <p><span class="strong">Recipients:</span></p>
-<p>Recipients of the data: Luke Francke</p>
+<p>Recipients of the data: Luke Francke,<br />E-mail: collected and stored through web hosting provider Lima City (ruled through <a href="#servers">data processing agreement</a>),<br />or messenger service provider Threema (<a href="https://threema.ch/privacy_policy/">privacy policy</a><span class="external-icon"></span>)</p>
 <p><span class="strong">Storage period:</span></p>
 <p>Data will be deleted no later than 3 months after finished processing the request.<br />If a contractual relationship arises, I am subject to the statutory retention periods under the German Commercial Code (HGB) and delete your data after these periods have expired.</p>
 <p><span class="strong">Provision mandatory or required:</span></p>
 <p>The provision of your personal data is voluntary. However, I can only process your request if you provide me with e-mail address and the content of the request. For external service providers (like Threema), you need to check the provider's privacy policy for detailed information.</p>
 <p><span class="strong">SSL Encryption</span></p>
 <p>In order to protect the security of your data during transmission, I use state-of-the-art encryption methods (e.g. SSL) via HTTPS.</p>
-<h4>Information about your right of objection according to Art. 21 GDPR</h4>
-<p><span class="strong">Individual case-related right of objection</span></p>
+<p><span class="strong">Information about your right of objection according to Art. 21 GDPR</span></p>
+<p class="italic">Individual case-related right of objection</p>
 <p>You have the right, for reasons arising from your particular situation, to object at any time to the processing of personal data concerning you, which is based on Art. 6 para. 1 lit. f GDPR (data processing on the basis of legitimate interests).</p>
 <p>If you file an objection, I will no longer process your personal data, unless I can prove compelling reasons worthy of protection for the processing that outweigh your interests, rights and freedoms, or the processing serves to assert, exercise or defend legal claims.</p>
 <p><span class="strong">Recipient:</span></p>
@@ -144,18 +144,3 @@ metadata:
 <p><span class="strong">Changes to my privacy policy</span></p>
 <p>I reserve the right to adapt this privacy policy so that it always complies with the current legal requirements or to implement changes to my services, e.g. when introducing new services. The new privacy policy then applies to your next visit. The old version will be invalidated when the new version comes into force.</p>
 <p><br />This privacy policy was created with the help of <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/">activeMind AG, the experts for external data protection officers</a><span class="external-icon"></span> (version #2020-09-30). Some texts were added later.</p>
-<h3>Latest Changes</h3>
-<p class="italic">I believe in transparency and want everyone to know what has changed compared to the last versions. These changes have been made:</p>
-<p><span class="strong">December 18, 2022:</span> Removed a cookie from the cookie listing</p>
-<p><span class="strong">December 14, 2022:</span> More transparency through examples of collected data</p>
-<p><span class="strong">October 30, 2022:</span> Simple summary of the content of this page</p>
-<p><span class="strong">October 8, 2022:</span> Updates to wording</p>
-<p><span class="strong">September 20, 2022:</span> Updates to data processing purposes</p>
-<p><span class="strong">September 9, 2022:</span> Updates to the wording in the log-file section</p>
-<p><span class="strong">September 4, 2022:</span> Updates to the wording on the order processing contract</p>
-<p><span class="strong">July 23, 2022:</span> Changed some descriptions in log file section and contact section</p>
-<p><span class="strong">June 16, 2022:</span> Updated the 'Cookies' list, added a necessary cookie</p>
-<p><span class="strong">June 10, 2022:</span> Updated the 'Contact' section</p>
-<p><span class="strong">May 19, 2022:</span> Removed Cloudflare, update of the cookie listing</p>
-<p><span class="strong">May 17, 2022:</span> Improved structure and text understanding simplified, added some links as clickable links; addition of some text in the cookie part</p>
-<p><span class="strong">May 10, 2022:</span> New, easier to understand design of cookie listing, but no technical changes; updated contact details</p>
