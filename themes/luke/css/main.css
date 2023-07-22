@@ -216,9 +216,9 @@ text-decoration: none;
 }
 .navmenu-btn {
 position: absolute;
-top: 15px;
+top: 12px;
 right: 10px;
-font-size: 1.05rem;
+font-size: 1.06rem;
 color: #232323;
 background: transparent;
 padding: 5px 10px;
@@ -235,6 +235,11 @@ background: rgba(11, 21, 14, 0.08);
 }
 .navmenu-btn:active {
 background: rgba(54, 71, 56, 0.2);
+}
+.navmenu-btn svg {
+display: inline-block;
+vertical-align: baseline;
+margin: 0 5px 0 0;
 }
 .navmenu-content {
 display: none;
@@ -289,36 +294,6 @@ display: block;
 position: absolute;
 bottom: 15px;
 right: 0;
-}
-.popup {
-position: absolute;
-display: block;
-bottom: 34px;
-left: 15px;
-color: #232323;
-cursor: pointer;
-}
-.popup .popuptext {
-visibility: hidden;
-width: 150px;
-background: #000000;
-background: rgba(0, 0, 0, .7);
-border-color: rgba( 255, 255, 255, 0.2 ) !important;
-backdrop-filter: blur(20px) saturate(1.8);
-webkit-backdrop-filter: blur(20px) saturate(1.8);  color: #fff;
-text-align: left;
-border: 2px solid rgba(255,255,255,0.2);
-border-radius: 7px;
-padding: .75rem 1.25rem;
-position: absolute;
-z-index: 1;
-bottom: 2rem;
-left: 0;
-font-size: .925rem;
-}
-.popup .show {
-visibility: visible;
--webkit-animation: opacity .35s ease-out;
 }
 .hero-text {
 margin: 25px 0 0 0;
@@ -693,7 +668,7 @@ transform: translateY(0);
 }
 }
 @media (prefers-color-scheme: dark) {
-p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .search-icon, .bordered .button svg, .collapsible, .hero-text svg, .navmenu-content svg {
+p, h1, h2, h3, h4, h5, h6, li, li ul, .divider, .red-note a, .availability-green, .availability-red, table, .button .external-icon, .search-icon, .bordered .button svg, .collapsible, .hero-text svg, .navmenu-content svg, .navmenu-btn svg {
 filter: invert(100%) !important;
 }
 img, .red-note, footer, footer p, footer svg, footer li, .hero-text {
@@ -763,20 +738,7 @@ color: #dcdcdc;
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23dcdcdc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 14px center;
 -webkit-animation: none;
 }
-.popup {
-color: #dcdcdc;
-}
-.popup .popuptext {
-color: #232323;
-background: #f2f2f2;
-background: rgba(242,242,242,.7);
-backdrop-filter: blur(20px) saturate(1.8);
--webkit-backdrop-filter: blur(20px) saturate(1.8);
-}
 @media only screen and (min-width: 720px) {
-.navmenu-content {
-border: none !important;
-}
 .navmenu-content a:hover {
 background: rgba(255, 255, 255, 0.15);
 }
