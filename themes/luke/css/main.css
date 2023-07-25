@@ -254,10 +254,11 @@ backdrop-filter: blur(20px) saturate(1.8);
 border-radius: 7px;
 border: 2px solid #d9d9d9;
 z-index: 1;
+max-height: 0;
 }
 .navmenu-links {
 display: block;
-margin: 5rem auto;
+margin: 3rem auto .5rem auto;
 }
 .navmenu-content a {
 display: block;
@@ -280,17 +281,24 @@ transition: all .125s ease;
 .navmenu-content a:nth-child(4) {
 -webkit-animation-delay: .55s !important;
 }
+.navmenu-content a:nth-child(6) {
+-webkit-animation-delay: .65s !important;
+}
 .navmenu-content.show {
 display: block;
 position: fixed;
 top: 10px;
 left: 50%;
 transform: translateX(-50%);
-height: 95%;
+max-height: 65%;
 width: 96%;
 z-index: 999;
-overflow: hidden !important;
--webkit-animation: menu-open .15s ease-out;
+-webkit-animation: menu-open .45s ease-out;
+}
+.navmenu-content.show + main {
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
 }
 .active {
 text-decoration: underline;
@@ -298,9 +306,7 @@ text-underline-offset: 2px;
 }
 .navmenu-content .search-link {
 display: block;
-position: absolute;
-bottom: 15px;
-right: 0;
+font-size: 1.2rem;
 }
 .hero-text {
 margin: 25px 0 0 0;
@@ -554,11 +560,12 @@ font-weight: 400;
 }
 .navmenu-content .search-link {
 position: fixed;
-top: 18px;
+top: 23px;
 right: 80px;
 -webkit-animation: none;
 width: auto;
-height: 40px;
+height: 32px;
+font-size: 1rem;
 z-index: 999;
 }
 .navmenu-content {
@@ -574,6 +581,7 @@ box-shadow: none;
 overflow: hidden;
 -webkit-animation: none;
 backdrop-filter: none !important;
+-webkit-backdrop-filter: none !important;
 z-index: 999;
 }
 .navmenu-links {
@@ -678,10 +686,11 @@ transform: translateY(0);
 @keyframes menu-open {
 0% {
 opacity: 0;
-height: 60px;
+max-height: 0;
 }
 100% {
 opacity: 1;
+max-height: auto;
 }
 }
 @media (prefers-color-scheme: dark) {
@@ -758,6 +767,9 @@ border: 2px solid rgba( 255, 255, 255, 0.2 );
 color: #dcdcdc;
 background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23dcdcdc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E") no-repeat 14px center;
 -webkit-animation: none;
+}
+.navmenu-content .search-link {
+color: #868889 !important;
 }
 @media only screen and (min-width: 720px) {
 .navmenu-content a:hover {
