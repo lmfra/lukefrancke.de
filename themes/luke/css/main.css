@@ -184,18 +184,14 @@ border: 2px solid rgba( 0, 0, 0, 0.1 );
 header {
 display: block;
 position: fixed;
-top: 10px;
-left: 50%;
-transform: translateX(-50%);
 background: #f2f2f2;
 background: rgba(242,242,242,.7);
 backdrop-filter: blur(20px) saturate(1.8);
 -webkit-backdrop-filter: blur(20px) saturate(1.8);
-width: 96%;
 min-height: 60px;
+width: 100%;
 z-index: 999;
-border-radius: 7px;
-border: 2px solid #d9d9d9;
+border-bottom: 2px solid #d9d9d9;
 opacity: 1;
 transition: all 0.35s ease;
 }
@@ -217,7 +213,7 @@ animation: none;
 text-decoration: none;
 }
 .navmenu-btn {
-position: absolute;
+position: fixed;
 top: 12px;
 right: 8px;
 font-size: 1.06rem;
@@ -251,14 +247,12 @@ background: #f2f2f2;
 background: rgba(242,242,242,.7);
 backdrop-filter: blur(20px) saturate(1.8);
 -webkit-backdrop-filter: blur(20px) saturate(1.8);
-border-radius: 7px;
-border: 2px solid #d9d9d9;
 z-index: 1;
 max-height: 0;
 }
 .navmenu-links {
 display: block;
-margin: 3rem auto .5rem auto;
+margin: 5rem auto .5rem auto;
 }
 .navmenu-content a {
 display: block;
@@ -287,13 +281,12 @@ transition: all .125s ease;
 .navmenu-content.show {
 display: block;
 position: fixed;
-top: 10px;
-left: 50%;
-transform: translateX(-50%);
-max-height: 65%;
-width: 96%;
+top: 0;
+right: 0;
+min-height: 100%;
+width: 100%;
 z-index: 999;
--webkit-animation: menu-open .45s ease-out;
+-webkit-animation: menu-open .30s ease-out;
 }
 .navmenu-content.show + main {
 touch-action: manipulation;
@@ -337,6 +330,13 @@ color: #7e7e7e !important;
 }
 .bottom-text {
 margin-top: 2.5rem;
+}
+.hero-cover {
+margin: 15px 0 0 -10px;
+max-width: 110%;
+height: auto;
+-webkit-animation: fade .5s .25s both ease-out;
+pointer-events: none;
 }
 figure {
 position: relative;
@@ -550,7 +550,7 @@ margin-left: auto;
 margin-right: auto;
 }
 header {
-width: 90%;
+width: 100%;
 height: 60px;
 }
 .header-logo {
@@ -560,8 +560,8 @@ font-weight: 400;
 }
 .navmenu-content .search-link {
 position: fixed;
-top: 23px;
-right: 80px;
+top: 12px;
+right: 20px;
 -webkit-animation: none;
 width: auto;
 height: 32px;
@@ -571,7 +571,7 @@ z-index: 999;
 .navmenu-content {
 display: block;
 width: 80%;
-margin: 0 0 0 20% !important;
+margin: 0 0 0 25% !important;
 background: #e0f1ff;
 height: 55px;
 background: none;
@@ -586,8 +586,8 @@ z-index: 999;
 }
 .navmenu-links {
 position: fixed;
-left: 25%;
-top: 22px;
+left: 30%;
+top: 10px;
 margin: 0;
 width: 100%;
 z-index: 999;
@@ -609,8 +609,8 @@ display: none;
 border: none !important;
 }
 .hero-text {
-margin: 25vh 0 0 0;
-font-size: 2.5rem;
+margin: 2.0125rem 0 1.125 0;
+font-size: 2.375rem;
 }
 .backlink {
 position: fixed;
@@ -686,11 +686,10 @@ transform: translateY(0);
 @keyframes menu-open {
 0% {
 opacity: 0;
-max-height: 0;
+width: 50px;
 }
 100% {
 opacity: 1;
-max-height: auto;
 }
 }
 @media (prefers-color-scheme: dark) {
