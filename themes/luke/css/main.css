@@ -20,7 +20,7 @@ margin: 100px 10px 0 10px;
 }
 *::selection {
 color: #fff;
-background: #232323;
+background: rgba( 0, 0, 0, 0.5 );
 }
 body::-webkit-scrollbar {
 width: 5px;
@@ -571,7 +571,7 @@ z-index: 999;
 .navmenu-content {
 display: block;
 width: 80%;
-margin: 0 0 0 25% !important;
+margin: 0 !important;
 background: #e0f1ff;
 height: 55px;
 background: none;
@@ -586,7 +586,7 @@ z-index: 999;
 }
 .navmenu-links {
 position: fixed;
-left: 30%;
+left: 20%;
 top: 10px;
 margin: 0;
 width: 100%;
